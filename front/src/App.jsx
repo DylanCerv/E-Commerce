@@ -12,20 +12,20 @@ function App() {
       <header>
         <a href="/">Amazona</a>
       </header>
-      <main>
+      <div>
         <h1>Featured Products</h1>
         {
           data.products.map((product, index) =>{
             console.log(product.name, index);
+            product.name;
             <div>
-              <img src={product.image} alt="" />
+              <img src={product.image} alt={product.name} />
               <p>{product.name}</p>
               <p>{product.price}</p>
-              <p>{product.name}</p>
             </div>
           })
         }
-      </main>
+      </div>
     </div>
   )
 }

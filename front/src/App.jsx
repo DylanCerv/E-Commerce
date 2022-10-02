@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import ListProducts from './components/ListProducts'
 
-import data from './data.js';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,18 +13,7 @@ function App() {
         <a href="/">Amazona</a>
       </header>
       <div>
-        <h1>Featured Products</h1>
-        {
-          data.products.map((product, index) =>{
-            console.log(product.name, index);
-            product.name;
-            <div>
-              <img src={product.image} alt={product.name} />
-              <p>{product.name}</p>
-              <p>{product.price}</p>
-            </div>
-          })
-        }
+        <ListProducts/>
       </div>
     </div>
   )

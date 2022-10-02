@@ -2,7 +2,6 @@
   "name": "node-starter",
   "version": "0.0.0",
   "scripts": {
-    "react": "frontend/",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
